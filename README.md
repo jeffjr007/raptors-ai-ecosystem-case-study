@@ -46,6 +46,14 @@ O sistema opera em três pilares principais:
 
 O diagrama abaixo ilustra o fluxo de dados, a interação entre os agentes e a lógica de processamento assíncrono implementada no projeto.
 
+```mermaid
+graph TD
+    %% Definição de Estilos (Texto forçado em Preto)
+    classDef user fill:#f9f,stroke:#333,stroke-width:2px,color:#000;
+    classDef ai fill:#e1f5fe,stroke:#0277bd,stroke-width:2px,color:#000;
+    classDef db fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000;
+    classDef batch fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000;
+
     User([📱 Usuário/WhatsApp]):::user <-->|Mensagens| Evo[Evolution API]
     Evo <-->|Webhook| N8N_Queue{⚡ Fila de Mensagens<br/>PostgreSQL}
 
@@ -77,7 +85,18 @@ O diagrama abaixo ilustra o fluxo de dados, a interação entre os agentes e a l
         ETL -->|Sync/Update| GSheets[📊 Google Sheets Professor]:::user
     end
 
-    Router -->|Transbordo/Erro| Humano[👨‍💻 Chatwoot / Humano]:::userssor]:::user
-    end
-
     Router -->|Transbordo/Erro| Humano[👨‍💻 Chatwoot / Humano]:::user
+````
+
+## 🚀 Resultados Obtidos
+
+  * **100% de Automação:** Eliminação total da necessidade de digitação manual de matrículas.
+  * **Redução de Inadimplência:** O sistema de cobrança ativa garantiu lembretes constantes sem desgaste da equipe.
+  * **Segurança de Dados:** Centralização das informações em banco SQL robusto, eliminando perda de dados em chats.
+
+-----
+
+*Desenvolvido por [Jeferson Junior](https://www.linkedin.com/in/jeferson-junior-as/)*
+
+```
+```
