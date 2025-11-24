@@ -1,4 +1,4 @@
-# 🦖 Raptors AI Ecosystem - Case Study de Automação Inteligente
+# 🦖🏀 Raptors AI Ecosystem - Case Study de Automação Inteligente
 
 > ⚠️ **Nota de Confidencialidade:** Este repositório documenta a arquitetura técnica e as decisões de engenharia do projeto "Raptors AI". O código-fonte completo e os dados sensíveis não foram disponibilizados publicamente para proteger a propriedade intelectual e a privacidade do cliente (LGPD).
 
