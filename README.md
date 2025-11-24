@@ -97,6 +97,3 @@ graph TD
 -----
 
 *Desenvolvido por [Jeferson Junior](https://www.linkedin.com/in/jeferson-junior-as/)*
-
-```
-```
