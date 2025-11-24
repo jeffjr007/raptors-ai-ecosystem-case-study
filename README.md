@@ -46,13 +46,12 @@ O sistema opera em três pilares principais:
 
 O diagrama abaixo ilustra o fluxo de dados, a interação entre os agentes e a lógica de processamento assíncrono implementada no projeto.
 
-```mermaid
 graph TD
-    %% Definição de Estilos
-    classDef user fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef ai fill:#e1f5fe,stroke:#0277bd,stroke-width:2px;
-    classDef db fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    classDef batch fill:#fff3e0,stroke:#ef6c00,stroke-width:2px;
+    %% Definição de Estilos (Texto forçado em Preto)
+    classDef user fill:#f9f,stroke:#333,stroke-width:2px,color:#000;
+    classDef ai fill:#e1f5fe,stroke:#0277bd,stroke-width:2px,color:#000;
+    classDef db fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000;
+    classDef batch fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000;
 
     User([📱 Usuário/WhatsApp]):::user <-->|Mensagens| Evo[Evolution API]
     Evo <-->|Webhook| N8N_Queue{⚡ Fila de Mensagens<br/>PostgreSQL}
